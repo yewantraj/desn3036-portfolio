@@ -48,9 +48,9 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: max-content;
+    width: fit-content;
     border-radius: 3rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
     backdrop-filter: blur(15px);
@@ -63,6 +63,7 @@ body {
 
 .top-nav li {
     list-style: none;
+    font-size: 14px;
 }
 
 .top-nav a {
@@ -76,6 +77,10 @@ body {
 .top-nav a:hover {
     background: rgba(255, 255, 255, 0.1);
     transition: var(--transition);
+}
+
+.top-nav .active {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .main-content {
@@ -96,13 +101,16 @@ blockquote {
     font-style: italic;
     font-weight: bold;
     color: #bbb;
-    font-size: 1.8em;
+    font-size: 24px;
     text-decoration: underline;
     margin-bottom: 1em;
+    text-align: center;
+    align-content: center;
 }
 
 h1 {
-    font-size: 1.8em;
+    font-size: 24px;
+    text-align: center;
     margin-bottom: 2em;
 }
 
@@ -166,4 +174,124 @@ h1 {
 .social-links a:hover {
     background-color: var(--color-primary);
     color:var(--color-white);
+}
+
+
+/* Responsive for medium screens (up to 768px) */
+@media screen and (max-width: 680px) {
+    .header {
+        width: 100%;
+        left: 0;
+        transform: none;
+        position: fixed;
+        border-radius: 0;
+        padding: 2rem;
+        align-content: center;
+        align-items: center;
+        margin-top: -5px;
+        text-align: center;
+    }
+
+    .top-nav {
+        gap: 1em;
+        font-size: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    }
+
+    .top-nav li {
+        font-size: 12px;
+    }
+    
+    .profile-picture img {
+        width: 100px;
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 0 1em;
+    }
+
+    blockquote {
+        font-size: 20px;
+        padding: 0 1em;
+    }
+
+    .cta {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+        align-content: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 1em;
+    }
+
+    .contact-btn, .cv-btn {
+        font-size: 14px;
+        padding: 0.6rem 1rem;
+    }
+
+    .social-links a {
+        padding: 0.3rem 0.8rem;
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 1em;
+    }
+
+@media screen and (max-width: 375px) {
+    .header {
+        padding: 0.8rem;
+    }
+
+    .top-nav {
+        gap: 0.5em;
+    }
+
+    .top-nav li {
+        font-size: 10px;
+    }
+
+    .profile-picture img {
+        width: 80px;
+        margin-top: 60px;
+    }
+
+    blockquote {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        padding: 0 0.5em;
+    }
+
+    .cta {
+        flex-direction: column;
+        gap: 0.3em;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.3em;
+    }
+
+    .contact-btn, .cv-btn {
+        font-size: 12px;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .social-links a {
+        padding: 0.3rem 0.5rem;
+        font-size: 14px;
+    }
 }
