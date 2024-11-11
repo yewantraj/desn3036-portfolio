@@ -115,7 +115,7 @@ h1 {
 }
 
 .highlight {
-    color: #3498db;
+    color: var(--color-primary);
     font-weight: bold;
 }
 
