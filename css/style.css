@@ -63,12 +63,12 @@ body {
 
 .top-nav li {
     list-style: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .top-nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
     padding: 0.5em 1em;
     /* background: rgba(255, 255, 255, 0.1); */
     border-radius: 20px;
@@ -176,8 +176,6 @@ h1 {
     color:var(--color-white);
 }
 
-
-/* Responsive for medium screens (up to 768px) */
 @media screen and (max-width: 680px) {
     .header {
         width: 100%;
@@ -197,8 +195,6 @@ h1 {
         font-size: 12px;
         flex-wrap: wrap;
         justify-content: center;
-    }
-
     }
 
     .top-nav li {
@@ -247,6 +243,7 @@ h1 {
         align-content: center;
         gap: 1em;
     }
+}
 
 @media screen and (max-width: 375px) {
     .header {
