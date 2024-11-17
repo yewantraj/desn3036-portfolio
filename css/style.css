@@ -262,6 +262,95 @@ h1 {
 
 /*end about*/
 
+
+/*project section start*/
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.05); /* Light transparent background */
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+    font-family: Arial, sans-serif;
+    
+}
+
+.project-preview {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    width: 200px; /* Set a fixed width for the container */
+    height: 200px; /* Set a fixed height for the container */
+    border-radius: 1rem; /* Optional: rounded corners */
+}
+
+.project-preview img {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    width: 100%; /* Ensure the image covers the container */
+    height: 100%; /* Stretch image to fit container */
+    object-fit: cover; /* Ensures the image scales proportionally without distortion */
+}
+
+
+/* Left side content styling */
+.project-content {
+    width: 50%;
+}
+
+.project-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+.project-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+}
+
+
+/* Tech stack badges styling */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-stack span {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+/* Right side project preview styling */
+.project-preview {
+    width: 50%;
+}
+
+.project-preview img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.project .main-content h2,.skill .main-content h2,.experience .main-content h2{
+    margin-bottom: 3rem;
+}
+
+/*project section end*/
+
 @media (max-width: 1100px){
     .side-nav {
         display: none;
