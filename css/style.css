@@ -372,6 +372,19 @@ h1 {
 
 /*project section end*/
 
+/*skill section start*/
+.skill .skill-info .tech-stack{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+}
+
+.skill{
+    padding: 120px 120px;
+}
+/*skill section end*/
+
 /*experience section start*/
 
 .experience .main-content {
@@ -550,6 +563,8 @@ h1 {
     }
 
 }
+
+
 
 @media screen and (max-width: 680px) {
 
