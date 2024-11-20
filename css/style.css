@@ -186,6 +186,7 @@ h1 {
     justify-content: center;
     gap: 1em;
     margin-bottom: 1.5em;
+    flex-wrap: wrap;
 }
 
 .buttons {
@@ -260,7 +261,7 @@ h1 {
     margin-top: 20px;
 }
 
-#about h2{
+#about-me h2{
     margin-bottom: 48px;
     margin-top: 48px;
 }
@@ -292,9 +293,6 @@ h1 {
     color: var(--color-white);
     font-family: Arial, sans-serif;
 }
-
-
-
 
 /* Left side content styling */
 .project-content {
@@ -364,6 +362,11 @@ h1 {
 
 .skill{
     padding: 120px 120px;
+}
+
+.skill .skill-info .tech-stack span{
+font-size: 20px;
+font-weight:normal;
 }
 /*skill section end*/
 
@@ -468,8 +471,12 @@ h1 {
     padding-bottom: 20px;
 }
 
+.left_content h3 {
+    margin-top: 12px;
+}
+
 .timeline ul li:nth-child(odd):before {
-    content: '\f0b1';
+    content: '\f19d';
     font-family: 'FontAwesome';
     position: absolute;
     font-size: 20px;
@@ -478,8 +485,7 @@ h1 {
     background-color: var(--color-bg);
     padding: 10px;
     border-radius: 50%;
-    right: -20px;
-    top: 10px;
+    right: -25px;
     z-index: 1;
 }
 
@@ -494,7 +500,6 @@ h1 {
     padding: 10px;
     border-radius: 50%;
     left: -20px;
-    top: 10px;
     z-index: 1;
 }
 
