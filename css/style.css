@@ -149,6 +149,7 @@ section {
     color: var(--color-white);
     padding: 0.5em 1em;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
 }
 
 .top-nav a:hover {
@@ -444,7 +445,7 @@ section {
     margin-top: 20px;
     content: '';
     position: absolute;
-    height: 100%;
+    height: 90%;
     left: 50%;
     width: 4px;
     top: -15px;
@@ -631,6 +632,9 @@ section {
 
 
 /*contact form */
+.contact {
+    margin-bottom: 20px;
+}
 .contact-form {
     border-radius: 8px;
     padding: 30px;
