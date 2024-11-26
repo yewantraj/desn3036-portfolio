@@ -38,6 +38,10 @@ section {
     display: none;
 }
 
+.date {
+    display: none;
+}
+
 /*side nav*/
 .side-nav {
     position: fixed;
@@ -172,13 +176,16 @@ section {
     /* Centers horizontally */
     align-items: center;
     margin-bottom: 1em;
+    
 
 }
 
 .profile-picture img {
     margin-top: 40px;
-    width: 120px;
+    width: 130px;
     border-radius: 50%;
+    padding: 2px;
+    border: solid#4db5ff 5px;
 }
 
 .banner blockquote {
@@ -542,10 +549,20 @@ section {
 
 .left h3 {
    margin-left: 50px;
+   font-size: 16px;
+   font-weight: 500;
 }
 
 .left1 h3 {
-    margin-left: -30px;
+    margin-left: -40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.left2 h3 {
+    margin-right: -60px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -689,9 +706,20 @@ section {
 
 /*end contact form */
 
+@media (max-width: 1450px) {
+    .side-nav {
+        left: 30px;
+    }
+}
+
 @media (max-width: 1100px) {
     .side-nav {
         display: none;
+    }
+
+    .date {
+        display: block;
+        margin-top: 10px;
     }
 
     .header {
@@ -707,8 +735,68 @@ section {
 
     .timeline {
         width: 100%;
+        padding-right: 0px;
+        margin: 30px;
     }
 
+    .timeline .right_content {
+        width: 100%;
+    }
+
+    .timeline:before {
+        left: 20px;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .timeline ul li:nth-child(odd):before {
+        top: -18px;
+        left: -60px;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: -60px;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+    .timeline ul li:nth-child(odd) .left_content,
+    .timeline ul li:nth-child(even) .left_content {
+        top: -64px;
+        left: 50px;
+        right: inherit;
+    }
+
+    .timeline .right_content {
+        position: relative;
+        display: inline-block;
+        margin-top: -27px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 13px;
+    }
+
+    .timeline li:nth-child(odd) .right_content .content::after {
+        top: 20px;
+        left: -6px;
+        transform: rotate(180deg);
+    }
+
+    .left_content h3{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -732,6 +820,14 @@ section {
         width: 100%;
         position: unset;
     }
+
+    .contact-form {
+        padding: 0;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 680px) {
@@ -739,8 +835,6 @@ section {
     .line {
         display: none;
     }
-
-
 
     .contact-btn,
     .cv-btn {
@@ -783,66 +877,7 @@ section {
         color: var(--color-white);
     }
 
-    .timeline {
-        width: 100%;
-        padding-right: 0px;
-
-    }
-
-    .timeline:before {
-        left: 20px;
-    }
-
-    .timeline ul li:nth-child(odd),
-    .timeline ul li:nth-child(even) {
-        width: 100%;
-        text-align: left;
-        padding-left: 30px;
-    }
-
-    .timeline ul li:nth-child(odd):before {
-        top: -18px;
-        left: -65px;
-        width: 50px;
-        height: 50px;
-        padding: 8px;
-        font-size: 18px;
-    }
-
-    .timeline ul li:nth-child(even):before {
-        top: -18px;
-        left: -64px;
-        width: 50px;
-        height: 50px;
-        padding: 8px;
-        font-size: 18px;
-    }
-
-    .timeline ul li:nth-child(odd) .left_content,
-    .timeline ul li:nth-child(even) .left_content {
-        top: -64px;
-        left: 50px;
-        right: inherit;
-    }
-
-    .timeline .right_content {
-        position: relative;
-        display: inline-block;
-        margin-top: -24px;
-        margin-left: 0px;
-        margin-right: 16px;
-        margin-bottom: 13px;
-    }
-
-    .timeline li:nth-child(odd) .right_content .content::after {
-        top: 20px;
-        left: -6px;
-        transform: rotate(180deg);
-    }
-
-    .left_content h3{
-        display: none;
-    }
+    
 }
 
 @media screen and (max-width: 375px) {
