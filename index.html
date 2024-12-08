@@ -14,6 +14,16 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "IYDRxNGn02IUvgF0a",
+      });
+    })();
+  </script>
+  <script src="js/email.js"></script>
 </head>
 
 <body>
@@ -77,7 +87,8 @@
           I am a passionate <span class="semi-bold">full-stack developer</span> with a strong foundation in both
           front-end and back-end technologies. I hold a <span class="italic">BSc Hons in
             Computing</span> from Leeds Beckett University and have gained solid
-          experience in <span class="underline">ASP.Net, Laravel,</span> and <span class="underline">PHP</span>. My commitment to continuous
+          experience in <span class="underline">ASP.Net, Laravel,</span> and <span class="underline">PHP</span>. My
+          commitment to continuous
           learning led me to move to Canada, where I pursued and completed
           a <span class="italic">Postgraduate Certificate in Cybersecurity</span> at Durham College. I
           became increasingly aware of how integral cybersecurity is to web
@@ -90,7 +101,8 @@
           online courses in <span class=".underline">MERN</span>, further ensuring that the applications I
           build are secure, scalable, and resilient. <br><br> Beyond my professional
           pursuits, I have a diverse range of hobbies that keep me engaged and
-          inspired. I am a gamer, enjoying different games from farming to RPG shooting. In my leisure time, I also love to <span class="italic">strum my
+          inspired. I am a gamer, enjoying different games from farming to RPG shooting. In my leisure time, I also love
+          to <span class="italic">strum my
             guitar, watch a variety of movies, and explore new places through
             traveling and trekking.</span> These activities not only provide me with
           relaxation but also fuel my creativity and problem-solving skills,
@@ -217,7 +229,9 @@
                   I completed my BSc Hons in Computing, which laid a strong
                   foundation in software development and computing principles.
                 </p>
-                <b><p class="date">Feb 2019 - Jul 2022</p></b>
+                <b>
+                  <p class="date">Feb 2019 - Jul 2022</p>
+                </b>
               </div>
             </div>
             <div class="left_content">
@@ -231,7 +245,9 @@
                 <p>
                   I relocated to Canada to pursue further education and expand my professional horizons.
                 </p>
-                <b><p class="date">Dec 2023</p></b>
+                <b>
+                  <p class="date">Dec 2023</p>
+                </b>
               </div>
             </div>
             <div class="left_content left">
@@ -243,9 +259,12 @@
               <div class="content">
                 <h3>Postgraduate Certificate in Cybersecurity</h3>
                 <p>
-                  I completed my postgraduate certificate in Cybersecurity, enhancing my knowledge in protecting and securing digital systems.
+                  I completed my postgraduate certificate in Cybersecurity, enhancing my knowledge in protecting and
+                  securing digital systems.
                 </p>
-                <b><p class="date">Jan 2024 - Sep 2024</p></b>
+                <b>
+                  <p class="date">Jan 2024 - Sep 2024</p>
+                </b>
               </div>
             </div>
             <div class="left_content left2">
@@ -257,9 +276,12 @@
               <div class="content">
                 <h3>Postgraduate Certificate in Frontend Design and Development</h3>
                 <p>
-                  I am currently pursuing a postgraduate certificate in Frontend Design and Development to deepen my expertise in web development technologies and services.
+                  I am currently pursuing a postgraduate certificate in Frontend Design and Development to deepen my
+                  expertise in web development technologies and services.
                 </p>
-                <b><p class="date">Sep 2024 - Aug 2025</p></b>
+                <b>
+                  <p class="date">Sep 2024 - Aug 2025</p>
+                </b>
               </div>
             </div>
             <div class="left_content left1">
@@ -282,9 +304,10 @@
       </p>
       <div class="contact-form" data-aos="fade-down">
         <form>
-          <input type="email" placeholder="Your email" required />
-          <textarea placeholder="Your message" required></textarea>
-          <button type="submit">Send <span>&#x1F680;</span></button>
+          <input type="name" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required />
+          <textarea placeholder="Your message" id="message" required></textarea>
+          <button type="submit" onclick="sendMail()">Send <span>&#x1F680;</span></button>
         </form>
       </div>
     </div>
